@@ -9,6 +9,7 @@ The mechanism's (`MatchingAlgorithm`'s) role is to choose what matches to create
 
 ## Files Included: 
 * Player.java: This (abstract) class is used for representing players in a given `Instance`. Every player must implement the `matchPerception` function, which outputs their dis-utility of playing against a given other player.
+* Match.java: This class holds the necessary information of a given Match, including the `Player`s involved and the match's starting time.
 * Instance.java: This (abstract) class is used for creating instances of the problem. Any valid instance must define the `getNextPlayer` method, which returns the next `Player` to arrive in the coordinator.
 * MatchingAlgorithm.java: This (abstract) class is used for denoting mechanisms for matching `Player`s. Any valid mechanism must implement the `matchesFromPool` method, which returns a list of matches to create from the unmatched `Player`s in the pool.
 * [jgrapht-core-1.5.2.jar](jgrapht.org): Theoretically contains code for computing max-weight-matching (see problems below).
