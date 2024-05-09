@@ -15,9 +15,7 @@ The mechanism's (`MatchingAlgorithm`'s) role is to choose what matches to create
 * [jgrapht-core-1.5.2.jar](jgrapht.org): Theoretically contains code for computing max-weight-matching (see problems below).
 * GreedyMatching.java: An example of a matching algorithm for this problem. It's not good; it just matches everyone in the pool that it can, disregarding the players' `matchPerception`s. 
 * Algorithm1.java: An algorithm we developed in class. It seems to be a bit better than Greedy, but unclear exactly how much better.
-
-## Problems: 
-* Currently, we don't have a way of computing the value of the Optimal solution. 
-* We identified the problem of computing Opt as technically just being the equivalent of calculating the minimal-weight-perfect-matching, but doing so either means
-* * Doing it ourselves (ugh)
-* * Using some one else's. This was the purpose of relying on jgraph, but there seems to be an issue that currently eludes me. 
+* Driver.java: This class is the Driver for the game. It takes in two command line parameters.
+* * The first parameter controls the number of requests to draw (by default, 6)
+* * The second parameter controles whether debugging is printer (by default, true)
+* * An example run would look like $ java Driver 100 false

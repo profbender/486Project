@@ -38,7 +38,7 @@ public abstract class MatchingAlgorithm {
                         if (p == otherPlayer || matchedOff.contains(otherPlayer)) continue;
 
                         Match m = new Match(p, otherPlayer, time);
-                        if (m.matchScore() < Double.POSITIVE_INFINITY){
+                        if (m.matchQuality() < Double.POSITIVE_INFINITY){
                             output.add(m);
                             matchedOff.add(p);
                             matchedOff.add(otherPlayer);
